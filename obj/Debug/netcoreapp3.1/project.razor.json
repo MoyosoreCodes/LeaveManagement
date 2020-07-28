@@ -1,0 +1,87 @@
+{
+  "FilePath": "c:\\Users\\Moyosore\\Documents\\GitHub\\LeaveManagement\\FirstTask.csproj",
+  "Configuration": {
+    "ConfigurationName": "MVC-3.0",
+    "LanguageVersion": "3.0",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-3.0"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": null,
+  "RootNamespace": "FirstTask",
+  "Documents": [
+    {
+      "FilePath": "c:\\Users\\Moyosore\\Documents\\GitHub\\LeaveManagement\\Views\\Record\\newstaff.cshtml",
+      "TargetPath": "Views\\Record\\newstaff.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Moyosore\\Documents\\GitHub\\LeaveManagement\\Views\\Register\\Index.cshtml",
+      "TargetPath": "Views\\Register\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Moyosore\\Documents\\GitHub\\LeaveManagement\\Views\\Login\\Index.cshtml",
+      "TargetPath": "Views\\Login\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Moyosore\\Documents\\GitHub\\LeaveManagement\\Views\\User\\RequestForm.cshtml",
+      "TargetPath": "Views\\User\\RequestForm.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Moyosore\\Documents\\GitHub\\LeaveManagement\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Moyosore\\Documents\\GitHub\\LeaveManagement\\Views\\User\\Index.cshtml",
+      "TargetPath": "Views\\User\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Moyosore\\Documents\\GitHub\\LeaveManagement\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Moyosore\\Documents\\GitHub\\LeaveManagement\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Moyosore\\Documents\\GitHub\\LeaveManagement\\Views\\Record\\Index.cshtml",
+      "TargetPath": "Views\\Record\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Moyosore\\Documents\\GitHub\\LeaveManagement\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Moyosore\\Documents\\GitHub\\LeaveManagement\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Moyosore\\Documents\\GitHub\\LeaveManagement\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Moyosore\\Documents\\GitHub\\LeaveManagement\\Views\\Request\\History.cshtml",
+      "TargetPath": "Views\\Request\\History.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Moyosore\\Documents\\GitHub\\LeaveManagement\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
+  "SerializationFormat": "0.2"
+}

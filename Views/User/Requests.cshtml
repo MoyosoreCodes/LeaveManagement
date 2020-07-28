@@ -1,0 +1,46 @@
+﻿@model LeaveManagement.ViewModels.MakeRequestsViewModel
+
+@{
+    var LeaveTypes = Model.LeaveTypes;
+    ViewData["Title"] = "Requests";
+}
+
+<h1>Requests</h1>
+
+<h4>MakeRequestsViewModel</h4>
+@*<partial name="_Error" />*@
+<br />
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Requests">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="LeaveType" class="control-label"></label>
+                <select asp-items="@(new SelectList(LeaveTypes, "Id", "Name"))" class="form-control" asp-for="LeaveType"></select>
+                <span asp-validation-for="LeaveType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StartDate" class="control-label"></label>
+                <input asp-for="StartDate" class="form-control" />
+                <span asp-validation-for="StartDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EndDate" class="control-label"></label>
+                <input asp-for="EndDate" class="form-control" />
+                <span asp-validation-for="EndDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save Requests" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,116 @@
+﻿@model IEnumerable<LeaveManagement.Data.Entities.LeaveRequest>
+
+@{
+}
+
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.js"></script>
+
+
+<br />
+@if (Model.Any())
+{
+    <table class="table table-hover">
+        <thead class="bg-dark text-light">
+            <tr>
+                <th scope="col">
+                    Name
+                </th>
+
+                <th scope="col">
+                    Type
+                </th>
+                <th scope="col">
+                    Requested
+                </th>
+                <th scope="col">
+                    Starts
+                </th>
+                <th scope="col">
+                    Ends
+                </th>
+                <th scope="col">
+                    Status
+                </th>
+                <th scope="col">
+                    Inital Balance
+                </th>
+                <th scope="col">
+                    Current Balance
+                </th>
+                <th scope="col">
+                    Actions
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var m in Model)
+            {
+                <tr>
+                    <td scope="row">
+                        @m.User.FullName
+                    </td>
+                    <td scope="row">
+                        @m.LeaveType.Name
+                    </td>
+                    <td scope="row">
+                        @m.RequestDate
+                    </td>
+                    <td scope="row">
+                        @m.StartDate
+                    </td>
+                    <td scope="row">
+                        @m.EndDate
+                    </td>
+                    <td scope="row">
+                        @m.Status
+                    </td>
+                    <td scope="row">
+                        <label class="fas fa-table mr-2 grey-text">
+                            @m.InitialLeaveBalance
+                        </label>
+                    </td>
+                    <td scope="row">
+                        <label class="fas fa-table mr-2 grey-text">
+                            @m.FinalLeaveBalance
+                        </label>
+                    </td>
+                    <td scope="row">
+                        <div>
+                            <form method="post">
+                                <input class="btn-sm btn-outline-primary" type="submit" value="Accept" width="70" asp-route-RequestId ="@m.Id" asp-action="Accept" />
+                                <input class="btn-sm btn-outline-danger" type="submit" value="Decline" width="70" asp-route-RequestId ="@m.Id" asp-action="Reject" />
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+}
+else
+{
+    <p class="">There are no recent requests</p>
+}
+
+
+@*<script>
+    var AcceptRequest = function (id) {
+        var url = "/Admin/Reject" + id;
+        var ans = confirm("Do you want to Accept Request with Id: " + id);
+        if (ans) {
+            $("").load(url)
+        }
+    }
+
+    var RejectRequest = function (id) {
+        var url = "/Admin/Reject" + id;
+        var ans = confirm("Do you want to Reject Request with Id: " + id);
+        if (ans) {
+            $("").load(url)
+        }
+</script>*@   
